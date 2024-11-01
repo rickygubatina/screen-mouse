@@ -1,0 +1,11 @@
+{
+  "name": "screen-wave",
+  "version": "1.0.0",
+  "main": "wave.js",
+  "scripts": {
+    "start": "node wave.js"
+  },
+  "dependencies": {
+    "robotjs": "^0.6.0"
+  }
+}
