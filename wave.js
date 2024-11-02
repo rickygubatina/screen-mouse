@@ -47,7 +47,7 @@ function angularMotion() {
       const y = Math.round(dr * Math.sin(angle) + mid_y);
       robot.moveMouse(x, y);
       const mouse = robot.getMousePos();
-      if (mouse.x != x || mouse.y != y) {
+      if (mouse.x != x && mouse.y != y) {
         end = true;
       }
       if (new Date().getTime() > expire) {
@@ -93,7 +93,7 @@ async function gridMotion() {
       curr_y += vector.y;
       robot.moveMouse(curr_x, curr_y);
       const mouse = robot.getMousePos();
-      if (mouse.x != curr_x || mouse.y != curr_y) {
+      if (mouse.x != curr_x && mouse.y != curr_y) {
         end = true;
       }
     }
